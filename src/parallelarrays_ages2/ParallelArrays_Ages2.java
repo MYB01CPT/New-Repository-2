@@ -5,6 +5,7 @@
 package parallelarrays_ages2;
 
 import javax.swing.*;
+import java.util.Scanner;
 
 /**
  *
@@ -16,6 +17,7 @@ public class ParallelArrays_Ages2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         // TODO code application logic here
         
         //declare the arrays
@@ -29,7 +31,6 @@ public class ParallelArrays_Ages2 {
         
         //parallel arrays for character and ages
         //these arrays work in conjunction with each other 
-        
         
         
         int ageOfChar = 0; //age of Character set to zero
@@ -52,6 +53,11 @@ public class ParallelArrays_Ages2 {
         else {
             JOptionPane.showMessageDialog(null, "Sorry! Invalid character name entered.");
         }//if invalid print that
+        
+        System.out.print("Please enter a random value (can be a word or number):");
+        String random = sc.next();
+        
+        System.out.println("Your value was '" + random + "'");
         
     }
     
